@@ -1,0 +1,318 @@
+/* Formatação global */
+/**/
+/**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+body.protanopia {
+    filter: url(#protanopia);
+}
+
+body.deuteranopia {
+    filter: url(#deuteranopia);
+}
+
+body.tritanopia {
+    filter: url(#tritanopia);
+}
+/* Estilos do cabeçalho */
+/**/
+/**/
+
+.pre-header {
+    background-color: #cecece;
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 38px;
+    z-index: 2;
+}
+
+.logo2 img {
+    width: 170px;
+    height: auto;
+    border: 1px solid #ff0000;
+}
+
+.buttons {
+    display: flex;
+}
+
+.btn-register {
+    padding: 7px 16px;
+    border: none;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    background-color: #5e1a1a;
+}
+
+/* Estilos do formulário de login */
+/**/
+/**/
+
+.password-toggle.fa.fa-eye {
+    position: absolute;
+    margin-left: -28px;
+    right: auto;
+    top: 52%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ff0000;
+    margin-right: -20px;
+}
+
+.password-toggle.fa.fa-eye-slash {
+    position: absolute;
+    margin-left: -29px;
+    right: auto;
+    top: 52%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ff0000;
+    margin-right: -20px;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border-color: #ce0000;
+}
+
+.contentinput {
+    align-items: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 37vh;
+    background-color: #ffffff;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 70px;
+    z-index: 4;
+}
+
+.logo img {
+    margin-left: 16px;
+    width: 40px;
+    height: auto;
+    margin-top: -6px;
+    margin-bottom: -13px;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    position: relative;
+}
+
+.password-toggle:hover {
+    color: #ce0000;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid red;
+    background-color: white;
+    margin: 5px;
+    position: relative;
+}
+
+input[type="checkbox"]:checked::before {
+    content: "x";
+    position: absolute;
+    left: 49%;
+    top: 49%;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    transform: translate(-50%, -50%);
+}
+
+.remember-me-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#rememberMe {
+    margin-left: 5px;
+}
+
+label {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.forgot-password {
+    margin-left: 70px;
+    text-align: right;
+}
+
+.forgot-password a {
+    color: #ff0000;
+    text-decoration: none;
+    text-align: right;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 19px;
+    margin-bottom: 12px;
+}
+
+.submit-btn:hover {
+    background-color: #5e1a1a;
+}
+
+.btn-home a {
+    font-size: 16px;
+    color: #ff0000;
+    text-decoration: none;
+}
+
+.btn-home:hover {
+    color: #5e1a1a;
+}
+
+/* Estilos do rodapé */
+/**/
+/**/
+
+.footer {
+    margin-top: auto;
+    background-color: #cecece;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    height: 21px;
+    z-index: 2;
+}
+
+/* Estilos das fontes */
+/**/
+/**/
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Arial, sans-serif;
+}
+
+p,
+a,
+label,
+button {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Estilos das imagens */
+/**/
+/**/
+
+img {
+    max-width: 100%;
+    margin-bottom: 50px;
+    border-radius: 10%;
+}
+
+/* Efeito de zoom para o painel de login */
+/**/
+/**/
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 37vh;
+    background-color: #ffffff;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 70px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-bottom {
+    position: fixed;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.btn-home a:hover {
+    border-bottom: 1px solid #ff0000;
+}

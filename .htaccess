@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Exclui diretórios existentes e arquivos reais da regra de reescrita
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Exclui diretórios que não estão dentro da pasta 'app' da regra de reescrita
+RewriteCond %{REQUEST_URI} !^/app/ [NC]
+
+# Aplica a regra de reescrita apenas para URLs que não correspondem a arquivos ou diretórios existentes
+RewriteRule ^(.*)$ index.php?url=$1 [L]
+
+# Impede o acesso direto a diretórios via url
+Options -Indexes
