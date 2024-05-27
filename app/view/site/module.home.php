@@ -12,24 +12,24 @@
     </script>
     
     <div class="overlay-imagem">
-        <img src="/trabalho2/img/Sem-Titulo-3.png"
+        <img src="<?=__BASEPATH__?>img/Sem-Titulo-3.png"
             alt="imagem cobra esquerda">
     </div>
     <div class="slider">
         <div>
-            <img src="/trabalho2/img/img2.png"
+            <img src="<?=__BASEPATH__?>img/img2.png"
                 alt="Imagem 1">
         </div>
         <div>
-            <img src="/trabalho2/img/img1.png"
+            <img src="<?=__BASEPATH__?>img/img1.png"
                 alt="Imagem 2">
         </div>
         <div>
-            <img src="/trabalho2/img/img2.png"
+            <img src="<?=__BASEPATH__?>img/img2.png"
                 alt="Imagem 3">
         </div>
         <div>
-            <img src="/trabalho2/img/img1.png"
+            <img src="<?=__BASEPATH__?>img/img1.png"
                 alt="Imagem 4">
         </div>
     </div>

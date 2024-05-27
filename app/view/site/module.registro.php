@@ -1,12 +1,12 @@
 <div class="background-image"></div>
 <div class="pre-header">
     <div class="logo">
-        <img src="/trabalho2/img/logoesquerda_1.png" alt="Logo">
+        <img src="<?=__BASEPATH__?>img/logoesquerda_1.png" alt="Logo">
     </div>
 </div>
 <div class="registro-container">
     <div class="registrologo">
-        <img src="/trabalho2/img/registro.png" alt="Logo">
+        <img src="<?=__BASEPATH__?>img/registro.png" alt="Logo">
     </div>
     <form action="register_process.php" method="post">
         <div class="input-container">

@@ -86,15 +86,15 @@ input:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
-    width: 43vh;
+    height: 80vh;
+    width: 50vh;
     background-color: #ffffff;
     border: 1px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 500px;
     margin: 0 auto;
     margin-bottom: 60px;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 .registro-container form {

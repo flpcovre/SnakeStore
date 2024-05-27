@@ -17,7 +17,7 @@
         <!-- Pré header -->
         <div class="pre-header">
             <div class="logo">
-                <img src="/trabalho2/img/logoesquerda_1.png"
+                <img src="<?=__BASEPATH__?>img/logoesquerda_1.png"
                     alt="Logo" >
             </div>
             <div class="buttons">
@@ -41,7 +41,7 @@
         <div class="main-header">
             <div class="logo2">
                 <a href="<?=__BASEPATH__?>">
-                    <img src="/trabalho2/img/logoloja.png"
+                    <img src="<?=__BASEPATH__?>img/logoloja.png"
                         alt="Logo">   
                 </a>
             </div>
@@ -57,11 +57,11 @@
                 <div class="search">
                     <input type="text" placeholder="Buscar">
                     <span class="search-icon">
-                        <img src="/trabalho2/img/lupa.png"
+                        <img src="<?=__BASEPATH__?>img/lupa.png"
                             alt="Lupa">
                     </span>
                     <button class="cart-button">
-                        <img src="/trabalho2/img/carrinho.png"
+                        <img src="<?=__BASEPATH__?>img/carrinho.png"
                             alt="Carrinho">
                     </button>
                 </div>

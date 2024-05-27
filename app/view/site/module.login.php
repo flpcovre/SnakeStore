@@ -1,7 +1,7 @@
   <div class="background-image"></div>
     <div class="pre-header">
         <div class="logo">
-            <img src="/trabalho2/img/logoesquerda_1.png" alt="Logo">
+            <img src="<?=__BASEPATH__?>img/logoesquerda_1.png" alt="Logo">
         </div>
         <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -45,7 +45,7 @@
     </div>
     <div class="login-container">
         <div class="logo2">
-            <img src="/trabalho2/img/logoloja.png" alt="Logo">
+            <img src="<?=__BASEPATH__?>img/logoloja.png" alt="Logo">
         </div>
         <form action="login_process.php" method="post">
             <div class="input-container">

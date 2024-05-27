@@ -4,7 +4,7 @@
     </div>
     <div class="footer-content">
         <div class="footer-logo">
-            <img src="/trabalho2/img/snakepng2.png"
+            <img src="<?=__BASEPATH__?>img/snakepng2.png"
                 alt="logotipo do rodapé">
         </div>
         <nav class="footer-nav">
@@ -18,13 +18,13 @@
         <div class="footer-social">
             <ul class="social-links">
                 <li><a href="#" target="_blank"><img
-                            src="/trabalho2/img/facebook.png"
+                            src="<?=__BASEPATH__?>img/facebook.png"
                             alt="Facebook"></a></li>
                 <li><a href="#" target="_blank"><img
-                            src="/trabalho2/img/twitter.png"
+                            src="<?=__BASEPATH__?>img/twitter.png"
                             alt="Twitter"></a></li>
                 <li><a href="#" target="_blank"><img
-                            src="/trabalho2/img/instapng.png"
+                            src="<?=__BASEPATH__?>img/instapng.png"
                             alt="Instagram"></a></li>
             </ul>
         </div>

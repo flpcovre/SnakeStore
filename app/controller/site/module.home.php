@@ -2,7 +2,7 @@
 
 $conn = new Statement();
 
-$sql = "SELECT * FROM produtos LIMIT 7";
+$sql = "SELECT * FROM produtos LIMIT 5";
 
 $rs = $conn->prepareStatement($sql)->executeReader();
 
