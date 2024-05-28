@@ -26,3 +26,10 @@ function applyColorblindFilter() {
 document.addEventListener('DOMContentLoaded', () => {
     applyColorblindFilter();
 });
+
+function speak(text) {
+    var msg = new SpeechSynthesisUtterance();
+    msg.text = `${text}`;
+    msg.lang = 'pt-BR';
+    window.speechSynthesis.speak(msg);
+}

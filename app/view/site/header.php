@@ -55,7 +55,7 @@
             </div>
             <div class="search-cart">
                 <div class="search">
-                    <input type="text" placeholder="Buscar">
+                    <input type="text" placeholder="Buscar" onkeypress="buscar('<?=__BASEPATH__?>', event, value)">
                     <span class="search-icon">
                         <img src="<?=__BASEPATH__?>img/lupa.png"
                             alt="Lupa">

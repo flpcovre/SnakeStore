@@ -1,4 +1,5 @@
    <!-- Rodapé -->
+<footer>
     <div class="pos-header">
         <div class="line"></div>
     </div>
@@ -34,3 +35,4 @@
     </div>
         <div class="pos-footer">
     </div>
+</footer>
