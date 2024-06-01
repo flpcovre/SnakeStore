@@ -3,8 +3,13 @@
 $conn = new Statement();
 $action = $request->get('action');
 
-if ($action == '') {
+if ($action == '' || $action == 'buscar') {
+
 	$sql = "SELECT * FROM produtos";
+	
+	if (isset($_POST['item'])) {
+		$sql .= " WHERE nome LIKE '%{$_POST['item']}%'";
+	}
 
 	$rs = $conn->prepareStatement($sql)->executeReader();
 

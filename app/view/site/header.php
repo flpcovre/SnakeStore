@@ -21,12 +21,19 @@
                     alt="Logo" >
             </div>
             <div class="buttons">
+                <button id="toggleButton" class="btn-help">Ativar Zoom</button>
+                <select id="zoom-select" onchange="">
+                    <option value="1.5">1.5x</option>
+                    <option value="2.5">2.5x</option>
+                    <option value="3.5">3.5x</option>
+                </select>
+                <hr class="hr-styled">
                 <button class="btn-help">Para daltônicos</button>
-                <select id="colorblind-select" onchange="applyColorblindFilter()">
-                    <option value="normal">Normal</option>
-                    <option value="protanopia">Protanopia</option>
-                    <option value="deuteranopia">Deuteranopia</option>
-                    <option value="tritanopia">Tritanopia</option>
+                <select id="colorblind-select" onchange="applyColorblindFilter('<?=__BASEPATH__?>', 'home')">
+                    <option value="normal" <?php if ($_SESSION['colorBlind'] == 'normal') echo 'selected'?>>Normal</option>
+                    <option value="protanopia" <?php if ($_SESSION['colorBlind'] == 'protanopia') echo 'selected'?>>Protanopia</option>
+                    <option value="deuteranopia" <?php if ($_SESSION['colorBlind'] == 'deuteranopia') echo 'selected'?>>Deuteranopia</option>
+                    <option value="tritanopia" <?php if ($_SESSION['colorBlind'] == 'tritanopia') echo 'selected'?>>Tritanopia</option>
                 </select>
                 <hr class="hr-styled">
                 <button class="btn-help">Ajuda</button>
@@ -55,11 +62,13 @@
             </div>
             <div class="search-cart">
                 <div class="search">
-                    <input type="text" placeholder="Buscar" onkeypress="buscar('<?=__BASEPATH__?>', event, value)">
-                    <span class="search-icon">
-                        <img src="<?=__BASEPATH__?>img/lupa.png"
-                            alt="Lupa">
-                    </span>
+                    <form id="buscarForm" action="<?=__BASEPATH__?>produtos/buscar" method="POST">    
+                        <input type="text" placeholder="Buscar" name="item" onkeypress="buscar(event)">
+                        <span class="search-icon" style="cursor: pointer;" onclick="buscar(event = null, button = true)">
+                            <img src="<?=__BASEPATH__?>img/lupa.png"
+                                alt="Lupa">
+                        </span>
+                    </form>
                     <button class="cart-button">
                         <img src="<?=__BASEPATH__?>img/carrinho.png"
                             alt="Carrinho">
