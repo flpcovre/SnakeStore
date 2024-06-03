@@ -17,15 +17,15 @@ body {
     padding: 0;
 }
 
-body.protanopia {
+.principal.protanopia {
     filter: url(#protanopia);
 }
 
-body.deuteranopia {
+.principal.deuteranopia {
     filter: url(#deuteranopia);
 }
 
-body.tritanopia {
+.principal.tritanopia {
     filter: url(#tritanopia);
 }
 

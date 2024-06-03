@@ -6,7 +6,7 @@ function redirect(href) {
 
 function applyColorblindFilter(path, module) {
     const select = document.getElementById('colorblind-select');
-    const body = document.body;
+    const body = document.getElementsByClassName('principal')[0];
 
     body.classList.remove('protanopia', 'deuteranopia', 'tritanopia');
 
@@ -41,6 +41,10 @@ function speak(text) {
     msg.text = `${text}`;
     msg.lang = 'pt-BR';
     window.speechSynthesis.speak(msg);
+}
+
+function stopSpeak() {
+    window.speechSynthesis.cancel();
 }
 
 function buscar(event = null, button = null) {

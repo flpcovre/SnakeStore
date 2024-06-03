@@ -30,10 +30,10 @@
                 <hr class="hr-styled">
                 <button class="btn-help">Para daltônicos</button>
                 <select id="colorblind-select" onchange="applyColorblindFilter('<?=__BASEPATH__?>', 'home')">
-                    <option value="normal" <?php if ($_SESSION['colorBlind'] == 'normal') echo 'selected'?>>Normal</option>
-                    <option value="protanopia" <?php if ($_SESSION['colorBlind'] == 'protanopia') echo 'selected'?>>Protanopia</option>
-                    <option value="deuteranopia" <?php if ($_SESSION['colorBlind'] == 'deuteranopia') echo 'selected'?>>Deuteranopia</option>
-                    <option value="tritanopia" <?php if ($_SESSION['colorBlind'] == 'tritanopia') echo 'selected'?>>Tritanopia</option>
+                    <option value="normal" <?php if (isset ($_SESSION['colorBlind']) &&$_SESSION['colorBlind'] == 'normal') echo 'selected'?>>Normal</option>
+                    <option value="protanopia" <?php if (isset ($_SESSION['colorBlind']) && $_SESSION['colorBlind'] == 'protanopia') echo 'selected'?>>Protanopia</option>
+                    <option value="deuteranopia" <?php if (isset ($_SESSION['colorBlind']) && $_SESSION['colorBlind'] == 'deuteranopia') echo 'selected'?>>Deuteranopia</option>
+                    <option value="tritanopia" <?php if (isset ($_SESSION['colorBlind']) && $_SESSION['colorBlind'] == 'tritanopia') echo 'selected'?>>Tritanopia</option>
                 </select>
                 <hr class="hr-styled">
                 <button class="btn-help">Ajuda</button>

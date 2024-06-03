@@ -19,7 +19,10 @@ if ($action == '' || $action == 'buscar') {
 	while ($rs->next()) {
 		$string .= "<div class=\"card-product\">
 						<img src=\"{$rs->getString('url_imagem')}\" alt=\"{$rs->getString('nome')}\"></img>
-						<h3 onclick=\"speak('{$rs->getString('nome')}')\">{$rs->getString('nome')}</h3>
+						<h3>{$rs->getString('nome')}</h3>
+						<a href='#' onclick=\"speak('{$rs->getString('nome')}')\">
+							<img class=\"sound-icon\" src=\"/SnakeStore/img/sound.png\" width=\"20\"></img>
+						</a>
 						<h5>{$rs->getString('tipo')}</h5>
 						<button class=\"product-price\" onclick=\"redirect('" . __BASEPATH__ . "{$view['module']}/view/id/{$rs->getInt('id')}')\">R$ " . number_format($rs->getString('valor'), 2, ',', '.') . "</button>
 					</div>";
@@ -57,9 +60,14 @@ if ($action == '' || $action == 'buscar') {
 							                </div>
 							                <h3 class=\"small\">{$rs->getString('tipo')}</h3>
 							            </div>
-							            <h3 class=\"title\">Descrição</h3>
+									
+							            <h3 class=\"title\">Descrição
+											<a href='#' onclick=\"speak('{$rs->getString('descricao')}')\">
+												<img src=\"/SnakeStore/img/sound.png\" width=\"20\"></img>
+											</a>
+										</h3>
 							            <div class=\"description\">
-							                <p class=\"text\" onclick=\"speak('{$rs->getString('descricao')}')\">{$rs->getString('descricao')}</p>
+							                <p class=\"text\">{$rs->getString('descricao')}</p>
 							            </div>
 							            <div class=\"color-container\">
 							                <h3 class=\"title\">Cores</h3>

@@ -27,15 +27,15 @@ button {
     font-size: 12px;
 }
 
-body.protanopia {
+.principal.protanopia {
     filter: url(#protanopia);
 }
 
-body.deuteranopia {
+.principal.deuteranopia {
     filter: url(#deuteranopia);
 }
 
-body.tritanopia {
+.principal.tritanopia {
     filter: url(#tritanopia);
 }
 /* paleta de cores */
@@ -305,6 +305,10 @@ body.tritanopia {
     height: auto;
     margin-bottom: 10px;
     border-radius: 8px;
+}
+
+.sound-icon {
+    width: 20px !important;
 }
 
 .card-product h3 {

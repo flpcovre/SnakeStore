@@ -16,7 +16,6 @@
       </div>
       <div class="main">
         <?php include "container.php"?>
-        <?php include "plugins/vlibras/vlibras.php"?>
       </div>
       <div class="foot">
         <?php include "footer.php"?>
@@ -38,6 +37,7 @@
         </filter>
       </defs>
     </svg>
+  </body>
 
-</body>
+<?php include "plugins/vlibras/vlibras.php"?>
 <script src="<?=__BASEPATH__?>js/site.scripts.js"></script>
