@@ -207,6 +207,10 @@ button {
     margin-left: 10px;
 }
 
+.search-icon img {
+    margin-top: 12px !important;
+}
+
 .search .search-icon img {
     width: 20px;
     height: 20px;

@@ -43,10 +43,6 @@ function speak(text) {
     window.speechSynthesis.speak(msg);
 }
 
-function stopSpeak() {
-    window.speechSynthesis.cancel();
-}
-
 function buscar(event = null, button = null) {
     if (event) {
         var key = event.wich || event.keyCode;
@@ -60,7 +56,7 @@ function buscar(event = null, button = null) {
 }
 
 function toggleZoom() {
-    zoomEnabled = !zoomEnabled; // Inverte o estado do zoom
+    zoomEnabled = !zoomEnabled;
     if (zoomEnabled) {
         document.body.addEventListener('mousemove', zoomPage);
     } else {

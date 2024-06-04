@@ -210,6 +210,10 @@ button {
     height: 20px;
 }
 
+.search-icon img {
+    margin-top: 12px !important;
+}
+
 .cart-button {
     margin-top: 2px;
     background-color: transparent;
