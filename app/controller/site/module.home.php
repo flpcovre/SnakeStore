@@ -10,7 +10,7 @@ if ($action == 'toggleColorBlind') {
 	exit;
 }
 
-$sql = "SELECT * FROM produtos LIMIT 5";
+$sql = "SELECT * FROM produtos ORDER BY RAND() LIMIT 5";
 
 $rs = $conn->prepareStatement($sql)->executeReader();
 
